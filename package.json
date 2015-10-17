@@ -1,7 +1,7 @@
 {
   "name": "hashtablejs",
   "version": "0.0.1",
-  "description": "Hash table data structure implementation in JavaScript. Stores entries in *buckets* based on hashing function.",
+  "description": "Hashtable data structure implementation in JavaScript.",
   "main": "hashtable.js",
   "directories": {
     "test": "test"

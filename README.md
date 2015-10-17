@@ -1,6 +1,12 @@
 # hashtable
 
-> Hash table data structure implementation in JavaScript. Stores entries in *buckets* based on hashing function.
+> [Hashtable](https://en.wikipedia.org/wiki/Hash_table) data structure implementation in JavaScript.
+
+Stores entries (key, value) in buckets based on hashcode.
+
+[![https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg]](https://en.wikipedia.org/wiki/Hash_table)
+
+<sup>[source](https://en.wikipedia.org/wiki/Hash_tabl)</sup>
 
 # Install
 
@@ -15,7 +21,7 @@ bower install hashtable
 # Usage
 
 ```javascript
-const HashTable = require('hashtablejs');
+const Hashtable = require('hashtablejs');
 
 function Point(x, y) {
   this.x = x;
@@ -28,11 +34,10 @@ function hashCode(point) {
 
 function equals(pointA, pointB) {
   return (pointA.x === pointB.x &&
-          pointA.y === pointB.y &&
-          pointA.z === pointB.z);
+          pointA.y === pointB.y);
 }
 
-var ht = new HashTable(hashCode, equals);
+var ht = new Hashtable(hashCode, equals);
 
 console.log(ht.put(new Point(2,3), 'red')); // undefined
 console.log(ht.has(new Point(2,3)); // true
@@ -47,17 +52,17 @@ console.log(ht.size()); // 0
 # API
 
 ```javascript
-HashTable(hashCodeFn, equalsFn);
-Hashtable.has(key);
-Hashtable.put(key, value);
-Hashtable.get(key);
-Hashtable.remove(key);
-Hashtable.size();
-Hashtable.clear();
-Hashtable.entries();
-Hashtable.values();
-Hashtable.keys();
-Hashtable.each(fn);
+Hashtable(hashCodeFn, equalsFn);
+hashtable.has(key);
+hashtable.put(key, value);
+hashtable.get(key);
+hashtable.remove(key);
+hashtable.size();
+hashtable.clear();
+hashtable.entries();
+hashtable.values();
+hashtable.keys();
+hashtable.each(fn);
 ```
 
 # Test

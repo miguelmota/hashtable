@@ -6,7 +6,7 @@
   "authors": [
     "Miguel Mota <miguelmota2@gmail.com>"
   ],
-  "description": "Hash table data structure implementation in JavaScript. Stores entries in *buckets* based on hashing function.",
+  "description": "Hashtable data structure implementation in JavaScript.",
   "keywords": [
     "hash",
     "hashtable",
