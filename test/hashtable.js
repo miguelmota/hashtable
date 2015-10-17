@@ -22,7 +22,7 @@ test('Hashtable', function (t) {
             pointA.z === pointB.z);
   }
 
-  var ht = new Hashtable(hashCode, equals);
+  const ht = new Hashtable(hashCode, equals);
 
   t.equal(ht._hashCode(new Point(2,3)), 'Point:2,3');
   t.equal(ht.put(new Point(2,3), 'red'), undefined);
@@ -35,7 +35,7 @@ test('Hashtable', function (t) {
   t.equal(ht.put(new Point(8,9), 'blue'), undefined);
   t.equal(ht.size(), 3);
 
-  var result = [];
+  const result = [];
   ht.each(function(key, value) {
     result.push([key, value]);
   });

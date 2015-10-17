@@ -6,7 +6,7 @@ Stores entries (key, value) in buckets based on hashcode.
 
 [![Hash table](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/315px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)](https://en.wikipedia.org/wiki/Hash_table)
 
-<sup>[source](https://en.wikipedia.org/wiki/Hash_tabl)</sup>
+<sup>[source](https://en.wikipedia.org/wiki/Hash_table)</sup>
 
 # Install
 
@@ -37,7 +37,7 @@ function equals(pointA, pointB) {
           pointA.y === pointB.y);
 }
 
-var ht = new Hashtable(hashCode, equals);
+const ht = new Hashtable(hashCode, equals);
 
 console.log(ht.put(new Point(2,3), 'red')); // undefined
 console.log(ht.has(new Point(2,3)); // true
