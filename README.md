@@ -2,7 +2,7 @@
 
 > [Hashtable](https://en.wikipedia.org/wiki/Hash_table) data structure implementation in JavaScript.
 
-Stores entries (key, value) in *buckets* based on hashcode returned by hashing function. Entries are added to an array within bucket if hashcodes collide and retrieved by unique key value.
+Stores entries (key, value) in *buckets* based on hashcode returned by hashing function. Entries are stored in an array within bucket if hashcodes collide, and retrieved by unique key value.
 
 [![Hash table](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/315px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)](https://en.wikipedia.org/wiki/Hash_table)
 
