@@ -1,0 +1,32 @@
+{
+  "name": "hashtable",
+  "main": "hashtable.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miguelmota/hashtable",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Hash table data structure implementation in JavaScript. Stores entries in *buckets* based on hashing function.",
+  "keywords": [
+    "hash",
+    "hashtable",
+    "hashmap",
+    "buckets",
+    "slots",
+    "hashcode",
+    "data",
+    "structure",
+    "associative",
+    "array",
+    "keys",
+    "values"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
