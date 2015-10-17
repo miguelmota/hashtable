@@ -25,10 +25,10 @@ test('Hashtable', function (t) {
   const ht = new Hashtable(hashCode, equals);
 
   t.equal(ht._hashCode(new Point(2,3)), 'Point:2,3');
-  t.equal(ht.put(new Point(2,3), 'red'), undefined);
+  t.equal(ht.put(new Point(2,3), 'yellow'), undefined);
   t.equal(ht.has(new Point(2,3)), true);
   t.equal(ht.has(new Point(1,2)), false);
-  t.equal(ht.put(new Point(2,3), 'red'), 'red');
+  t.equal(ht.put(new Point(2,3), 'red'), 'yellow');
   t.equal(ht.put(new Point(2,3,5), 'green'), undefined);
   t.equal(ht.get(new Point(2,3)), 'red');
   t.equal(ht.size(), 2);

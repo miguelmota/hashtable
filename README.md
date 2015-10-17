@@ -42,6 +42,7 @@ const ht = new Hashtable(hashCode, equals);
 console.log(ht.put(new Point(2,3), 'red')); // undefined
 console.log(ht.has(new Point(2,3)); // true
 console.log(ht.get(new Point(2,3)); // 'red'
+console.log(ht.put(new Point(2,3), 'green')); // 'red'
 console.log(ht.put(new Point(8,9), 'blue')); // undefined
 console.log(ht.size()); // 2
 console.log(ht.remove(new Point(8,9))); // 'blue'
